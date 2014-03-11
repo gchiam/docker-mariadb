@@ -1,7 +1,9 @@
 docker-mariadb
 ==============
 
-MariaDB on Docker.
+MariaDB on Docker
+
+Docker index page: https://index.docker.io/u/gchiam/mariadb/
 
 Includes a bunch of cool features such as:
 
@@ -17,7 +19,7 @@ Here's how it works:
     $ docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=ki9eingi gchiam/mariadb
     2467fda2ead82832f436c6578afb7db89e89f964fbe366d12304b5b0ab051658
     $ mysql -h 127.0.0.1 -u root -p
-    Enter password: 
+    Enter password:
     Welcome to the MariaDB monitor.  Commands end with ; or \g.
     Your MariaDB connection id is 1
     Server version: 5.5.36-MariaDB-1~precise-log mariadb.org binary distribution
@@ -26,7 +28,7 @@ Here's how it works:
 
     Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-    MariaDB [(none)]> 
+    MariaDB [(none)]>
 
 (Example assumes MySQL client is installed on Docker host.)
 
@@ -38,4 +40,3 @@ Environment variables
  - `MYSQL_USER`: A user to create that has access to the database specified by `MYSQL_DATABASE`.
  - `MYSQL_PASSWORD`: The password for `MYSQL_USER`. Defaults to a blank password.
  - `MYSQLD_ARGS`: extra parameters to pass to the mysqld process
- 
