@@ -1,6 +1,11 @@
 FROM stackbrew/ubuntu:12.04
 MAINTAINER Gordon Chiam <gordon.chiam@gmail.com>
 
+# Common
+RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+RUN apt-get update
+RUN apt-get upgrade -y
+
 # install python-software-properties to get add-apt-repository 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes python-software-properties
 
