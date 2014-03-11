@@ -1,5 +1,5 @@
 FROM stackbrew/ubuntu:12.04
-MAINTAINER Ben Firshman <ben@orchardup.com>
+MAINTAINER Gordon Chiam <gordon.chiam@gmail.com>
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes python-software-properties
 RUN apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db
