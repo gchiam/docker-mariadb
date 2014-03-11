@@ -14,23 +14,19 @@ Includes a bunch of cool features such as:
 
 Here's how it works:
 
-    $ docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=xehVg1IpVhEmlwRMG orchardup/mysql
-    da809981545f
+    $ docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=ki9eingi gchiam/mariadb
+    2467fda2ead82832f436c6578afb7db89e89f964fbe366d12304b5b0ab051658
     $ mysql -h 127.0.0.1 -u root -p
-    Enter password:
-    Welcome to the MySQL monitor.  Commands end with ; or \g.
-    Your MySQL connection id is 1
-    Server version: 5.5.34-0ubuntu0.12.04.1-log (Ubuntu)
+    Enter password: 
+    Welcome to the MariaDB monitor.  Commands end with ; or \g.
+    Your MariaDB connection id is 1
+    Server version: 5.5.36-MariaDB-1~precise-log mariadb.org binary distribution
 
-    Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.
-
-    Oracle is a registered trademark of Oracle Corporation and/or its
-    affiliates. Other names may be trademarks of their respective
-    owners.
+    Copyright (c) 2000, 2013, Oracle, Monty Program Ab and others.
 
     Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-    mysql>
+    MariaDB [(none)]> 
 
 (Example assumes MySQL client is installed on Docker host.)
 
