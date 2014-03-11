@@ -1,7 +1,7 @@
 docker-mariadb
 ==============
 
-MySQL on Docker.
+MariaDB on Docker.
 
 Includes a bunch of cool features such as:
 
