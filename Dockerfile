@@ -21,7 +21,7 @@ RUN chmod 664 /etc/mysql/conf.d/my.cnf
 ADD run /usr/local/bin/run
 RUN chmod +x /usr/local/bin/run
 
-#VOLUME ["/var/lib/mysql"]
+RUN mkdir -p /var/lib/mariadb
 VOLUME ["/var/lib/mariadb"]
 EXPOSE 3307
 CMD ["/usr/local/bin/run"]
