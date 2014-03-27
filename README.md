@@ -17,9 +17,9 @@ Includes a bunch of cool features such as:
 Here's how it works:
 
     Build
-    $ sudo docker build --tag=mariadb .
+    $ sudo docker build --tag=musashi/mariadb .
     RUN
-    $ sudo docker run -d -v /var/lib/mariadb:/var/lib/mariadb:rw -name mariadb -e MYSQL_DATABASE=dashboard_prod -e MYSQL_ROOT_PASSWORD=ki9eingi mariadb
+    $ sudo docker run -d -v /var/lib/mariadb:/var/lib/mariadb:rw -name mariadb -e MYSQL_DATABASE=dashboard_prod -e MYSQL_ROOT_PASSWORD=ki9eingi musashi/mariadb
 
     $ mysql -h 127.0.0.1 -u root -p
     Enter password:
