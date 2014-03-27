@@ -16,10 +16,15 @@ Includes a bunch of cool features such as:
 
 Here's how it works:
 
-    Build
+#### Build
+
     $ sudo docker build --tag=musashi/mariadb .
-    RUN
+
+#### Run
+
     $ sudo docker run -d -v /var/lib/mariadb:/var/lib/mariadb:rw -name mariadb -e MYSQL_DATABASE=dashboard_prod -e MYSQL_ROOT_PASSWORD=ki9eingi musashi/mariadb
+
+#### Connect
 
     $ mysql -h 127.0.0.1 -u root -p
     Enter password:
