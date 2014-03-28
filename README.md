@@ -16,8 +16,17 @@ Includes a bunch of cool features such as:
 
 Here's how it works:
 
-    $ docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=ki9eingi gchiam/mariadb
-    2467fda2ead82832f436c6578afb7db89e89f964fbe366d12304b5b0ab051658
+#### Build
+
+    $ sudo docker build -t musashi/mariadb .
+
+#### Run
+
+    $ sudo docker run -d -v /var/lib/mysql:/var/lib/mariadb:rw -name mariadb \
+    -e MYSQL_DATABASE=dashboard_prod -e MYSQL_ROOT_PASSWORD=ki9eingi musashi/mariadb
+
+#### Connect
+
     $ mysql -h 127.0.0.1 -u root -p
     Enter password:
     Welcome to the MariaDB monitor.  Commands end with ; or \g.
