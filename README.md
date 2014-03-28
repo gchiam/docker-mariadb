@@ -18,11 +18,12 @@ Here's how it works:
 
 #### Build
 
-    $ sudo docker build --tag=musashi/mariadb .
+    $ sudo docker build -t musashi/mariadb .
 
 #### Run
 
-    $ sudo docker run -d -v /var/lib/mariadb:/var/lib/mariadb:rw -name mariadb -e MYSQL_DATABASE=dashboard_prod -e MYSQL_ROOT_PASSWORD=ki9eingi musashi/mariadb
+    $ sudo docker run -d -v /var/lib/mysql:/var/lib/mariadb:rw -name mariadb \
+    -e MYSQL_DATABASE=dashboard_prod -e MYSQL_ROOT_PASSWORD=ki9eingi musashi/mariadb
 
 #### Connect
 
